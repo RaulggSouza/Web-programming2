@@ -1,0 +1,17 @@
+{
+  "name": "jedi-server",
+  "version": "1.0.0",
+  "main": "codigo.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@eslint/js": "^9.21.0",
+    "eslint": "^9.21.0",
+    "globals": "^16.0.0",
+    "prettier": "3.5.3"
+  }
+}
