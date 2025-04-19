@@ -4,6 +4,8 @@ import Menu from "./componentes/Menu";
 import Rodape from "./componentes/Rodape";
 import PaginaPadrao from "./componentes/PaginaPadrao";
 import Inicio from "./paginas/inicio";
+import Postagem from "./paginas/Postagem";
+import NaoEncontrada from "./paginas/NaoEncontrada";
 function AppRoutes() {
   return (
     <BrowserRouter>
@@ -13,8 +15,9 @@ function AppRoutes() {
         <Route path="/" element={<PaginaPadrao />}>
           <Route path="/" element={<Inicio/>} />
           <Route path="/sobremim" element={<SobreMim />} />
+          <Route path="/posts/:id" element={<Postagem/>} />
         </Route>
-        <Route path="*" element={<h1>Página não encontrada!</h1>} />
+        <Route path="*" element={<NaoEncontrada/>} />
       </Routes>
       {/* Rodape fora de todas as rotas, p/ aparecer em todas as páginas */}
       <Rodape />
